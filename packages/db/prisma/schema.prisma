@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ImageStatus {
+  PENDING
+  PROCESSING
+  ACCEPTED
+  REJECTED
+  FAILED
+}
+
+enum RejectionReason {
+  LOW_RESOLUTION
+  UNSUPPORTED_FORMAT
+  DUPLICATE
+  BLURRY
+  FACE_TOO_SMALL
+  MULTIPLE_FACES
+  NO_FACE
+}
+
+/// A grouping for one upload batch / browser session.
+model Session {
+  id        String   @id @default(uuid()) @db.Uuid
+  label     String?
+  createdAt DateTime @default(now())
+  images    Image[]
+
+  @@index([createdAt])
+}
+
+model Image {
+  id        String  @id @default(uuid()) @db.Uuid
+  session   Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  sessionId String  @db.Uuid
+
+  originalFilename    String
+  mimeType            String
+  status              ImageStatus @default(PENDING)
+  storageKey          String // S3 key of the original upload
+  convertedStorageKey String? // S3 key of the normalized JPEG (preview / HEIC output)
+
+  // measured attributes (filled by the worker)
+  width         Int?
+  height        Int?
+  sizeBytes     Int?
+  perceptualHash BigInt? // 64-bit pHash; Hamming via bit_count(a # b)
+  blurScore     Float?
+  faceCount     Int?
+  faceSizeRatio Float? // largest face area / image area
+  durationMs    Int? // pipeline processing time
+
+  rejections ImageRejection[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // hot path: list a session's images by status, newest first
+  @@index([sessionId, status, createdAt])
+  @@index([sessionId, createdAt])
+}
+
+model ImageRejection {
+  id      String          @id @default(uuid()) @db.Uuid
+  image   Image           @relation(fields: [imageId], references: [id], onDelete: Cascade)
+  imageId String          @db.Uuid
+  reason  RejectionReason
+  detail  String? // human-readable "measured vs threshold" line
+  measured Float?
+  threshold Float?
+
+  @@unique([imageId, reason])
+  @@index([reason])
+}

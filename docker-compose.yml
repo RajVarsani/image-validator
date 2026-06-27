@@ -1,0 +1,78 @@
+name: ${COMPOSE_PROJECT_NAME:-image-validator}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: iv-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-image_validator}
+    ports:
+      - "${PG_PORT:-5440}:5432"
+    volumes:
+      - iv_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  kafka:
+    image: apache/kafka:3.9.0
+    container_name: iv-kafka
+    restart: unless-stopped
+    ports:
+      - "${KAFKA_PORT:-9292}:9292"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9091
+      # HOST listener -> host Node procs at localhost:9292 ; DOCKER listener -> other containers at kafka:9293
+      KAFKA_LISTENERS: CONTROLLER://localhost:9091,HOST://0.0.0.0:9292,DOCKER://0.0.0.0:9293
+      KAFKA_ADVERTISED_LISTENERS: HOST://localhost:9292,DOCKER://kafka:9293
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,HOST:PLAINTEXT,DOCKER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: DOCKER
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_NUM_PARTITIONS: 3
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9292 --list || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+
+  kafka-init:
+    image: apache/kafka:3.9.0
+    container_name: iv-kafka-init
+    depends_on:
+      kafka:
+        condition: service_healthy
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        /opt/kafka/bin/kafka-topics.sh --bootstrap-server kafka:9293 --create --if-not-exists --topic image.validation.requested --partitions 3 --replication-factor 1 &&
+        /opt/kafka/bin/kafka-topics.sh --bootstrap-server kafka:9293 --create --if-not-exists --topic image.validation.dlq --partitions 1 --replication-factor 1 &&
+        echo "topics ready" &&
+        /opt/kafka/bin/kafka-topics.sh --bootstrap-server kafka:9293 --list
+
+  localstack:
+    image: localstack/localstack:3
+    container_name: iv-localstack
+    restart: unless-stopped
+    ports:
+      - "${LOCALSTACK_PORT:-4576}:4566"
+    environment:
+      SERVICES: s3
+      DEBUG: "0"
+      AWS_DEFAULT_REGION: ${S3_REGION:-us-east-1}
+    volumes:
+      - "./infra/localstack-init:/etc/localstack/init/ready.d"
+
+volumes:
+  iv_pgdata:

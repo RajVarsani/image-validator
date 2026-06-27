@@ -1,0 +1,27 @@
+{
+  "name": "image-validator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "infra:logs": "docker compose logs -f",
+    "db:generate": "pnpm --filter @iv/db generate",
+    "db:push": "dotenv -e .env -- pnpm --filter @iv/db push",
+    "models:download": "pnpm --filter @iv/validation models:download",
+    "setup": "pnpm install && pnpm models:download && pnpm infra:up && sleep 6 && pnpm db:push",
+    "dev:api": "pnpm --filter @iv/api dev",
+    "dev:worker": "pnpm --filter @iv/worker dev",
+    "dev:web": "pnpm --filter @iv/web dev",
+    "dev": "concurrently -n api,worker,web -c blue,magenta,green \"pnpm dev:api\" \"pnpm dev:worker\" \"pnpm dev:web\"",
+    "test": "pnpm --filter @iv/validation test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "dotenv-cli": "^8.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

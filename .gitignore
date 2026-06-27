@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.localstack/
+packages/db/src/generated/
+packages/validation/models/*.bin
+packages/validation/models/*-shard*
+apps/web/dist/
+.vite/

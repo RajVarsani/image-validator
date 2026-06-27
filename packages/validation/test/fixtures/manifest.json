@@ -1,0 +1,989 @@
+[
+  {
+    "file": "accepted/face_01.png",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1000px PNG"
+  },
+  {
+    "file": "accepted/face_02.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1100px JPG"
+  },
+  {
+    "file": "accepted/face_03.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1200px JPG"
+  },
+  {
+    "file": "accepted/face_04.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1280px JPG"
+  },
+  {
+    "file": "accepted/face_05.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1400px JPG"
+  },
+  {
+    "file": "accepted/face_06.png",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1500px PNG"
+  },
+  {
+    "file": "accepted/face_07.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1600px JPG"
+  },
+  {
+    "file": "accepted/face_08.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1000px JPG"
+  },
+  {
+    "file": "accepted/face_09.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1100px JPG"
+  },
+  {
+    "file": "accepted/face_10.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1200px JPG"
+  },
+  {
+    "file": "accepted/face_11.png",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1280px PNG"
+  },
+  {
+    "file": "accepted/face_12.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1400px JPG"
+  },
+  {
+    "file": "accepted/face_13.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1500px JPG"
+  },
+  {
+    "file": "accepted/face_14.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1600px JPG"
+  },
+  {
+    "file": "accepted/face_15.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1000px JPG"
+  },
+  {
+    "file": "accepted/face_16.png",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1100px PNG"
+  },
+  {
+    "file": "accepted/face_17.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1200px JPG"
+  },
+  {
+    "file": "accepted/face_18.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1280px JPG"
+  },
+  {
+    "file": "accepted/face_19.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1400px JPG"
+  },
+  {
+    "file": "accepted/face_20.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1500px JPG"
+  },
+  {
+    "file": "accepted/face_21.png",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1600px PNG"
+  },
+  {
+    "file": "accepted/face_22.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1000px JPG"
+  },
+  {
+    "file": "accepted/face_23.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1100px JPG"
+  },
+  {
+    "file": "accepted/face_24.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1200px JPG"
+  },
+  {
+    "file": "accepted/face_25.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1280px JPG"
+  },
+  {
+    "file": "accepted/face_26.png",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1400px PNG"
+  },
+  {
+    "file": "accepted/face_27.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1500px JPG"
+  },
+  {
+    "file": "accepted/face_28.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~38% of frame, 1600px JPG"
+  },
+  {
+    "file": "accepted/face_29.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1000px JPG"
+  },
+  {
+    "file": "accepted/face_30.jpg",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "unique single face, ~30% of frame, 1100px JPG"
+  },
+  {
+    "file": "blurry/face_blur_01_sigma3.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 3 (borderline ,  near threshold)"
+  },
+  {
+    "file": "blurry/face_blur_02_sigma4.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 4"
+  },
+  {
+    "file": "blurry/face_blur_03_sigma5.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 5"
+  },
+  {
+    "file": "blurry/face_blur_04_sigma6.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 6"
+  },
+  {
+    "file": "blurry/face_blur_05_sigma7.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 7"
+  },
+  {
+    "file": "blurry/face_blur_06_sigma8.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 8"
+  },
+  {
+    "file": "blurry/face_blur_07_sigma3.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 3 (borderline ,  near threshold)"
+  },
+  {
+    "file": "blurry/face_blur_08_sigma5.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 5"
+  },
+  {
+    "file": "blurry/face_blur_09_sigma6.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 6"
+  },
+  {
+    "file": "blurry/face_blur_10_sigma8.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 8"
+  },
+  {
+    "file": "blurry/face_blur_11_sigma10.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 10"
+  },
+  {
+    "file": "blurry/face_blur_12_sigma4.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "BLURRY"
+      ]
+    },
+    "notes": "gaussian sigma 4"
+  },
+  {
+    "file": "duplicate/face_03_copy.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "exact of accepted/face_03.jpg (dHash distance 0)",
+    "duplicateOf": "accepted/face_03.jpg"
+  },
+  {
+    "file": "duplicate/face_03_reencode_q70.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "reencode of accepted/face_03.jpg (dHash distance 0)",
+    "duplicateOf": "accepted/face_03.jpg"
+  },
+  {
+    "file": "duplicate/face_07_reencode_q70.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "reencode of accepted/face_07.jpg (dHash distance 0)",
+    "duplicateOf": "accepted/face_07.jpg"
+  },
+  {
+    "file": "duplicate/face_07_resized95.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "resize of accepted/face_07.jpg (dHash distance 1)",
+    "duplicateOf": "accepted/face_07.jpg"
+  },
+  {
+    "file": "duplicate/face_15_crop2px.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "crop2px of accepted/face_15.jpg (dHash distance 2)",
+    "duplicateOf": "accepted/face_15.jpg"
+  },
+  {
+    "file": "duplicate/face_15_resized95.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "resize of accepted/face_15.jpg (dHash distance 1)",
+    "duplicateOf": "accepted/face_15.jpg"
+  },
+  {
+    "file": "duplicate/face_22_copy.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "exact of accepted/face_22.jpg (dHash distance 0)",
+    "duplicateOf": "accepted/face_22.jpg"
+  },
+  {
+    "file": "duplicate/face_22_reencode_q70.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "DUPLICATE"
+      ]
+    },
+    "notes": "reencode of accepted/face_22.jpg (dHash distance 0)",
+    "duplicateOf": "accepted/face_22.jpg"
+  },
+  {
+    "file": "face_too_small/face_small_01_700on3000.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "700px face on 3000px noise canvas, face ~1.6% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_02_700on3200.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "700px face on 3200px noise canvas, face ~1.4% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_03_650on2800.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "650px face on 2800px noise canvas, face ~1.6% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_04_800on3600.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "800px face on 3600px noise canvas, face ~1.5% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_05_600on3000.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "600px face on 3000px noise canvas, face ~1.2% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_06_560on2600.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "560px face on 2600px noise canvas, face ~1.4% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_07_720on3400.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "720px face on 3400px noise canvas, face ~1.3% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_08_820on4000.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "820px face on 4000px noise canvas, face ~1.3% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_09_680on3000.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "680px face on 3000px noise canvas, face ~1.5% of frame (<12%)"
+  },
+  {
+    "file": "face_too_small/face_small_10_640on3200.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "FACE_TOO_SMALL"
+      ]
+    },
+    "notes": "640px face on 3200px noise canvas, face ~1.2% of frame (<12%)"
+  },
+  {
+    "file": "heic/face_heic_01.heic",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "real HEIF (ftypheic) single face ~30% of frame ,  allowed format, should pass"
+  },
+  {
+    "file": "heic/face_heic_02.heic",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "real HEIF (ftypheic) single face ~30% of frame ,  allowed format, should pass"
+  },
+  {
+    "file": "heic/face_heic_03.heic",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "real HEIF (ftypheic) single face ~30% of frame ,  allowed format, should pass"
+  },
+  {
+    "file": "heic/face_heic_04.heic",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "real HEIF (ftypheic) single face ~30% of frame ,  allowed format, should pass"
+  },
+  {
+    "file": "heic/face_heic_05.heic",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "real HEIF (ftypheic) single face ~30% of frame ,  allowed format, should pass"
+  },
+  {
+    "file": "heic/face_heic_06.heic",
+    "expect": {
+      "status": "accepted",
+      "reasons": []
+    },
+    "notes": "real HEIF (ftypheic) single face ~30% of frame ,  allowed format, should pass"
+  },
+  {
+    "file": "low_resolution/face_lowres_01_200x200.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 200x200 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_02_256x256.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 256x256 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_03_300x300.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 300x300 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_04_300x400.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 300x400 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_05_400x300.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 400x300 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_06_480x360.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 480x360 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_07_350x500.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 350x500 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_08_200x300.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 200x300 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_09_420x420.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 420x420 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_10_500x280.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION"
+      ]
+    },
+    "notes": "single face downscaled to 500x280 (min edge < 512)"
+  },
+  {
+    "file": "low_resolution/face_lowres_blur_150x150.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "LOW_RESOLUTION",
+        "BLURRY"
+      ]
+    },
+    "notes": "tiny 150x150 AND gaussian-blurred ,  two reasons genuinely apply"
+  },
+  {
+    "file": "multiple_faces/group_01_2faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "2 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_02_2faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "2 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_03_2faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "2 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_04_2faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "2 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_05_2faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "2 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_06_3faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "3 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_07_3faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "3 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_08_3faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "3 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_09_3faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "3 distinct faces side by side"
+  },
+  {
+    "file": "multiple_faces/group_10_2faces.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "MULTIPLE_FACES"
+      ]
+    },
+    "notes": "2 distinct faces side by side"
+  },
+  {
+    "file": "no_face/scene_01.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "beach chair on dunes ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_02.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "green rolling hills ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_03.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "fence post in a field ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_04.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "rusty vintage truck ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_05.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "suspension bridge at dusk ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_06.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "Flatiron building ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_07.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "forest footbridge ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_08.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "foggy pine forest ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_09.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "mossy green plants ,  no faces present"
+  },
+  {
+    "file": "no_face/scene_10.jpg",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "NO_FACE"
+      ]
+    },
+    "notes": "hot-air balloons over valley ,  no faces present"
+  },
+  {
+    "file": "unsupported_format/face_as_bmp_01.bmp",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid BMP magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/face_as_bmp_02.bmp",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid BMP magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/face_as_gif_01.gif",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid GIF magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/face_as_gif_03.gif",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid GIF magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/face_as_tiff_01.tiff",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid TIFF magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/face_as_tiff_02.tiff",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid TIFF magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/face_as_webp_01.webp",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid WEBP magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  },
+  {
+    "file": "unsupported_format/scene_as_gif_02.gif",
+    "expect": {
+      "status": "rejected",
+      "reasons": [
+        "UNSUPPORTED_FORMAT"
+      ]
+    },
+    "notes": "valid GIF magic bytes ,  format not in {JPEG,PNG,HEIC}"
+  }
+]

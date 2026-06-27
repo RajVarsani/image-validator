@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* coss-style token layer. Dark is the default; [data-theme="light"] overrides. */
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #0a0a0b;
+  --color-surface: #141415;
+  --color-surface-2: #1b1b1d;
+  --color-inset: #0e0e0f;
+  --color-border: #262628;
+  --color-border-strong: #343437;
+  --color-ink: #f4f4f5;
+  --color-muted: #8a8a8f;
+  --color-faint: #5a5a5f;
+  --color-primary: #fafafa;
+  --color-on-primary: #0a0a0b;
+  --color-brand: #2c6a48;
+  --color-success: #3fb36b;
+  --color-success-dim: #16271c;
+  --color-warning: #d8a53c;
+  --color-warning-dim: #2a2212;
+
+  /* coss.com/ui (shadcn) token aliases mapped onto the palette above (dark) */
+  --color-background: #0a0a0b;
+  --color-foreground: #f4f4f5;
+  --color-primary-foreground: #0a0a0b;
+  --color-secondary: #1b1b1d;
+  --color-secondary-foreground: #f4f4f5;
+  --color-accent: #1b1b1d;
+  --color-accent-foreground: #f4f4f5;
+  --color-input: #262628;
+  --color-popover: #141415;
+  --color-popover-foreground: #f4f4f5;
+  --color-ring: #343437;
+  --color-destructive: #d8a53c;
+
+  --radius-button: 10px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-card: 16px;
+}
+
+[data-theme="light"] {
+  --color-bg: #f7f7f6;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f1ef;
+  --color-inset: #f4f4f3;
+  --color-border: #e8e8e6;
+  --color-border-strong: #d8d8d4;
+  --color-ink: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-faint: #9a9a9a;
+  --color-primary: #141415;
+  --color-on-primary: #fafafa;
+  --color-success: #2e9e5b;
+  --color-success-dim: #eaf4ee;
+  --color-warning: #a9760f;
+  --color-warning-dim: #fbf3e2;
+
+  --color-background: #f7f7f6;
+  --color-foreground: #1a1a1a;
+  --color-primary-foreground: #fafafa;
+  --color-secondary: #f1f1ef;
+  --color-secondary-foreground: #1a1a1a;
+  --color-accent: #f1f1ef;
+  --color-accent-foreground: #1a1a1a;
+  --color-input: #e8e8e6;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
+  --color-ring: #d8d8d4;
+  --color-destructive: #a9760f;
+}
+
+/* Tailwind v4 drops the UA default cursor on buttons, so restore it globally. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  a,
+  summary,
+  label[for] {
+    cursor: pointer;
+  }
+  button:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 0.8s linear infinite;
+}
+
+:root {
+  --destructive-foreground: var(--color-red-700);
+}
+
+.dark {
+  --destructive-foreground: var(--color-red-400);
+}
+
+@theme inline {
+  --color-destructive-foreground: var(--destructive-foreground);
+}
